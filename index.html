@@ -3,93 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Birtney666 - 现开发者作品集</title>
+  <title>Birtney666 - 开发者 & 创造者</title>
+  
+  <!-- 预连接优化 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- 字体加载 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- 图标库 -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- 样式表 -->
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- SEO 优化 -->
+  <meta name="description" content="Birtney666 - 专业开发者，专注于创造优雅的数字解决方案和用户体验">
+  <meta name="keywords" content="开发者,前端,后端,全栈,设计,用户体验">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Birtney666 - 开发者 & 创造者">
+  <meta property="og:description" content="专业开发者，专注于创造优雅的数字解决方案和用户体验">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
 <body>
   <!-- 导航栏 -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo" data-page="home">Birtney666</a>
+  <nav class="navbar" role="navigation" aria-label="主导航">
+    <div class="navbar-container">
+      <!-- 品牌标识 -->
+      <div class="navbar-brand">
+        <a href="#" data-page="home" aria-label="返回首页">Birtney666</a>
+      </div>
       
-      <ul class="nav-menu">
-        <li><a href="#" class="nav-link active" data-page="home">首页</a></li>
-        <li><a href="#" class="nav-link" data-page="about">关于</a></li>
-        <li><a href="#" class="nav-link" data-page="projects">项目</a></li>
-        <li><a href="#" class="nav-link" data-page="contact">联系</a></li>
+      <!-- 主导航 -->
+      <ul class="navbar-nav" role="menubar">
+        <li role="none">
+          <a href="#" class="navbar-link active" data-page="home" role="menuitem">首页</a>
+        </li>
+        <li role="none">
+          <a href="#" class="navbar-link" data-page="about" role="menuitem">关于</a>
+        </li>
+        <li role="none">
+          <a href="#" class="navbar-link" data-page="projects" role="menuitem">项目</a>
+        </li>
+        <li role="none">
+          <a href="#" class="navbar-link" data-page="contact" role="menuitem">联系</a>
+        </li>
       </ul>
       
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <!-- 移动端菜单切换 -->
+      <button class="navbar-toggle" aria-label="切换导航菜单" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
     </div>
   </nav>
 
   <!-- 主要内容区域 -->
-  <main class="main-content">
+  <main id="main-content" role="main">
     <!-- 内容将通过JavaScript动态加载 -->
   </main>
 
   <!-- 页脚 -->
-  <footer class="footer">
-    <div class="container">
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
       <div class="footer-content">
+        <!-- 品牌信息 -->
         <div class="footer-section">
           <h3>Birtney666</h3>
-          <p style="color: rgba(255, 255, 255, 0.7); margin-top: 1rem; line-height: 1.6;">
-            致力于创造优秀的数字产品，用技术改变世界。
+          <p class="text-sm" style="color: rgba(255, 255, 255, 0.7); margin-top: var(--space-4); line-height: var(--leading-relaxed);">
+            致力于创造优雅的数字产品，用技术改变世界。
           </p>
+          
+          <!-- 社交媒体链接 -->
+          <div class="social-links">
+            <a href="https://github.com/birtney666" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:contact@example.com" class="social-link" aria-label="邮箱">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
         
+        <!-- 快速链接 -->
         <div class="footer-section">
           <h3>快速链接</h3>
-          <ul class="footer-links">
-            <li><a href="#" data-page="home">首页</a></li>
-            <li><a href="#" data-page="about">关于我</a></li>
-            <li><a href="#" data-page="projects">项目展示</a></li>
-            <li><a href="#" data-page="contact">联系方式</a></li>
-          </ul>
+          <div class="footer-links">
+            <a href="#" class="footer-link" data-page="home">首页</a>
+            <a href="#" class="footer-link" data-page="about">关于我</a>
+            <a href="#" class="footer-link" data-page="projects">项目展示</a>
+            <a href="#" class="footer-link" data-page="contact">联系方式</a>
+          </div>
         </div>
         
+        <!-- 技术栈 -->
         <div class="footer-section">
-          <h3>技术栈</h3>
-          <ul class="footer-links">
-            <li><a href="#">前端开发</a></li>
-            <li><a href="#">后端开发</a></li>
-            <li><a href="#">移动开发</a></li>
-            <li><a href="#">全栈解决方案</a></li>
-          </ul>
+          <h3>技术专长</h3>
+          <div class="footer-links">
+            <span class="footer-link">前端开发</span>
+            <span class="footer-link">后端架构</span>
+            <span class="footer-link">全栈解决方案</span>
+            <span class="footer-link">用户体验设计</span>
+          </div>
         </div>
         
+        <!-- 联系信息 -->
         <div class="footer-section">
-          <h3>社交媒体</h3>
-          <div class="social-links">
-            <a href="https://github.com/birtney666" class="social-link" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:your.email@example.com" class="social-link" title="邮箱">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a href="#" class="social-link" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="social-link" title="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
+          <h3>联系方式</h3>
+          <div class="footer-links">
+            <span class="footer-link">📧 contact@example.com</span>
+            <span class="footer-link">📍 中国</span>
+            <span class="footer-link">💼 开放合作机会</span>
           </div>
         </div>
       </div>
       
+      <!-- 页脚底部 -->
       <div class="footer-bottom">
         <p>&copy; 2024 Birtney666. 保留所有权利。</p>
       </div>
     </div>
   </footer>
 
+  <!-- JavaScript -->
   <script src="script.js"></script>
+  
+  <!-- 性能监控 -->
+  <script>
+    // 页面性能监控
+    window.addEventListener('load', () => {
+      if ('performance' in window && 'measure' in performance) {
+        performance.mark('pageLoaded');
+        console.log('页面加载完成');
+      }
+    });
+  </script>
 </body>
 </html>
